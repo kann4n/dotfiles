@@ -13,7 +13,7 @@ call plug#end()
 set nocompatible
 filetype plugin indent on
 syntax on
-set number relativenumber
+set number 
 set tabstop=4 shiftwidth=4 expandtab smarttab
 set termguicolors
 set ignorecase smartcase
@@ -25,7 +25,7 @@ set nobackup nowritebackup
 set updatetime=300
 
 " --- UI ---
-let g:gruvbox_contrast_dark = 'medium'
+let g:gruvbox_contrast_dark = 'hard'
 set background=dark
 colorscheme gruvbox 
 let g:airline_theme='gruvbox'
@@ -70,3 +70,5 @@ command! FoldAll :call CocActionAsync('fold')
 
 " Auto-commands
 autocmd CursorHold * silent call CocActionAsync('highlight')
+
+
